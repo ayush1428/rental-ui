@@ -1,0 +1,65 @@
+<!-- login.component.html -->
+<div class="min-h-screen bg-gradient-to-b from-[#e6faff] to-white flex items-center justify-center px-4">
+  <div class="bg-white rounded-2xl shadow-xl w-full max-w-md px-8 py-10 relative">
+
+    <!-- Avatar Icon -->
+    <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-100 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A9 9 0 1119.12 3.879 9 9 0 015.12 17.804z" />
+      </svg>
+    </div>
+
+    <!-- Title -->
+    <h2 class="text-2xl font-bold text-center text-gray-800 mt-10 mb-2">Welcome Back</h2>
+    <p class="text-sm text-center text-gray-500 mb-6">Login to your Tenant or Landlord account</p>
+
+  
+
+    <!-- Login Form -->
+  <form class="space-y-4" (ngSubmit)="onLogin()">
+  <!-- Email Input -->
+  <input
+    type="email"
+    placeholder="Email"
+    [(ngModel)]="email"
+    name="email"
+    required
+    class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+  />
+
+  <!-- Password Input -->
+  <input
+    type="password"
+    placeholder="Password"
+    [(ngModel)]="password"
+    name="password"
+    required
+    class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+  />
+
+  <!-- User Type Selector -->
+  <select
+    [(ngModel)]="userType"
+    name="userType"
+    class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+  >
+    <option value="tenant">Tenant</option>
+    <option value="landlord">Landlord</option>
+  </select>
+
+  <!-- Sign In Button -->
+  <button
+    type="submit"
+    class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-full font-semibold transition"
+  >
+    Sign In
+  </button>
+</form>
+
+    <!-- Register Link -->
+    <p class="text-center text-sm text-gray-600 mt-6">
+      Don’t have an account?
+      <a routerLink="/register" class="text-blue-600 hover:underline font-medium">Register</a>
+    </p>
+  </div>
+</div>

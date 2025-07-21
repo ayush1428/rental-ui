@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<div class="min-h-screen bg-gradient-to-b from-[#f0f9ff] to-white p-6">
+  <!-- Dashboard Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-slide-up">
+    <div class="bg-white shadow-xl rounded-2xl p-6 border-t-4 border-blue-500">
+      <h2 class="text-gray-600 font-semibold">Agreement Status</h2>
+      <p class="text-blue-600 text-2xl font-bold mt-2">Active</p>
+    </div>
+    <div class="bg-white shadow-xl rounded-2xl p-6 border-t-4 border-green-500">
+      <h2 class="text-gray-600 font-semibold">Monthly Rent</h2>
+      <p class="text-green-600 text-2xl font-bold mt-2">₹12,000</p>
+    </div>
+    <div class="bg-white shadow-xl rounded-2xl p-6 border-t-4 border-yellow-400">
+      <h2 class="text-gray-600 font-semibold">Fixed Deposit</h2>
+      <p class="text-yellow-500 text-2xl font-bold mt-2">₹25,000</p>
+    </div>
+    <div class="bg-white shadow-xl rounded-2xl p-6 border-t-4 border-pink-500">
+      <h2 class="text-gray-600 font-semibold">Next Due Date</h2>
+      <p class="text-pink-600 text-2xl font-bold mt-2">5th July</p>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="flex flex-wrap gap-4 mt-10 animate-fade-in">
+    <button class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition-all duration-300">
+      💰 Pay Rent
+    </button>
+    <button class="bg-purple-100 text-purple-700 px-6 py-3 rounded-lg shadow hover:bg-purple-200 transition-all duration-300">
+      📄 View Agreement
+    </button>
+    <button class="bg-gray-100 text-gray-700 px-6 py-3 rounded-lg shadow hover:bg-gray-200 transition-all duration-300">
+      📊 Rent History
+    </button>
+  </div>
+</div>
